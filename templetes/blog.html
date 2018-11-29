@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>MY BLOG</h1>
+    
+    <div class="container">
+        <div class="container">
+
+            <img src="{% static 'img1.jpg' %}"style="width:100%"/>
+            <span class="title2 container">this is blog</span>    
+        </div>
+    </div>
+    {% for i in bl%}
+   <p> {{i.name}}</p>
+    <br>
+    {{i.details}}
+    {%endfor%}
+</body>
+</html>
